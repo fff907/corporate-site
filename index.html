@@ -42,8 +42,8 @@
     <main>
      <!-- カバー -->
       <section class="relative h-[700px] overflow-hidden">
-        <!-- 背景3色ブロック -->
-        <div class="absolute inset-0 z-0 grid grid-cols-[745px_695px] h-[700px]">
+        <!-- 画面いっぱいに広がる背景（親の中で絶対配置） -->
+        <div class="absolute inset-0 z-0 grid grid-cols-[745px_695px]">
           <div class="grid grid-rows-2">
             <div class="bg-[#E9BED2]"></div>
             <div class="bg-[#FEBF60]"></div>
@@ -51,11 +51,11 @@
           <div class="bg-[#84BFF7]"></div>
         </div>
 
-        <!-- メインの写真3枚 -->
+        <!-- 画像とテキストは中央寄せ＆幅制限 -->
         <div class="relative z-10 flex justify-center items-center h-full gap-4 px-10 max-w-[1280px] mx-auto">
-          <img src="./img/house-builder-1.png" alt="設計図" class="w-1/3 object-cover">
-          <img src="./img/house-builder-2.png" alt="打ち合わせ中の女性" class="w-1/3 object-cover rounded-md">
-          <img src="./img/house-builder-3.png" alt="作業する男性" class="w-1/3 object-cover">
+          <img src="./img/house-builder-1.png" class="w-1/3 object-cover" alt="設計図">
+          <img src="./img/house-builder-2.png" class="w-1/3 object-cover rounded-md" alt="打ち合わせ中の女性">
+          <img src="./img/house-builder-3.png" class="w-1/3 object-cover" alt="作業する男性">
         </div>
 
         <!-- キャッチコピー -->
