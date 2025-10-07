@@ -42,13 +42,15 @@
     <main>
      <!-- カバー -->
       <section class="relative h-[700px] overflow-hidden">
-        <!-- 画面いっぱいに広がる背景（親の中で絶対配置） -->
-        <div class="absolute inset-0 z-0 grid grid-cols-[745px_695px]">
-          <div class="grid grid-rows-2">
-            <div class="bg-[#E9BED2]"></div>
-            <div class="bg-[#FEBF60]"></div>
+        <!-- 背景3色ブロック -->
+        <div class="absolute inset-0 z-0 flex justify-center">
+          <div class="w-[1440px] grid grid-cols-[745px_695px]">
+            <div class="grid grid-rows-2 h-full">
+              <div class="bg-[#E9BED2] h-full"></div>
+              <div class="bg-[#FEBF60] h-full"></div>
+            </div>
+            <div class="bg-[#84BFF7] h-full"></div>
           </div>
-          <div class="bg-[#84BFF7]"></div>
         </div>
 
         <!-- 画像とテキストは中央寄せ＆幅制限 -->
