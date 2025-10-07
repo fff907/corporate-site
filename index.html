@@ -23,27 +23,19 @@
 
   <body>
     <!-- ヘッダー -->
-    <header class="flex justify-between items-center px-6 py-4">
-      <a href="index.html" class="text-xl font-bold tracking-wide text-gray-800">
+    <header class="w-full h-[100px] border-t-[10px] border-[#004896] bg-white/75 shadow-md flex justify-between items-center px-6">
+      <!-- ロゴ -->
+      <a href="index.html" class="text-[32px] font-extrabold font-[NotoSansJP] text-gray-900">
         株式会社ネクサスハウジング
       </a>
-    
-      <!-- ハンバーガーメニュー(3本線) -->
-      <button class="header__hamburger" id="open" aria-label="メニューを開く">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    
-      <!-- PC/SP共通ナビゲーション -->
-      <nav class="global-nav" id="overlay">
-        <ul class="nav__list">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#service">SERVICE</a></li>
-          <li><a href="#pickup">PICKUP</a></li>
-          <li><a href="#news">NEWS</a></li>
-          <li><a href="#recruit">RECRUIT</a></li>
-        </ul>
+
+      <!-- メニュー -->
+      <nav class="hidden md:flex space-x-10">
+        <a href="#about" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">ABOUT</a>
+        <a href="#service" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">SERVICE</a>
+        <a href="#pickup" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">PICKUP</a>
+        <a href="#news" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">NEWS</a>
+        <a href="#recruit" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">RECRUIT</a>
       </nav>
     </header>
 
