@@ -78,24 +78,23 @@
 
       <div class="container">
         <!-- About -->
-        <section id="about" class="bg-white my-[50px] mx-[20px] flex justify-center">
-          <div class="bg-[#004896] text-white rounded-lg px-[70px] py-[30px] max-w-[1440px] w-full">
-            <div class="flex flex-col md:flex-row justify-between items-start gap-[60px]">
-              
-              <!-- 左カラム：テキスト -->
-              <div class="flex-1">
-                <!-- 見出し -->
-                <div class="mb-[60px]">
-                  <h2 class="font-[NotoSansJP] font-medium text-[64px] leading-none mb-[8px]">ABOUT</h2>
-                  <p class="font-[NotoSansJP] font-semibold text-[32px]">私たちについて</p>
-                </div>
+        <section id="about" class="bg-white my-[50px] mx-[20px]">
+          <div class="bg-[#004896] text-white rounded-lg px-[70px] py-[30px] max-w-[1440px] w-full mx-auto">
+            <!-- 上段 -->
+            <div class="grid grid-cols-[auto_1fr] items-baseline gap-x-[40px]">
+              <div>
+                <h2 class="font-[NotoSansJP] font-medium text-[64px] leading-none">ABOUT</h2>
+                <p class="font-[NotoSansJP] font-semibold text-[32px] mt-[8px]">私たちについて</p>
+              </div>
+              <h3 class="font-[NotoSansJP] font-semibold text-[56px] leading-tight">
+                つながる未来、広がる暮らし。
+              </h3>
+            </div>
 
-                <!-- サブキャッチ -->
-                <h3 class="font-[NotoSansJP] font-semibold text-[56px] mb-[60px] leading-tight">
-                  つながる未来、広がる暮らし。
-                </h3>
-
-                <!-- 本文 -->
+            <!-- 下段 -->
+            <div class="mt-[60px] grid grid-cols-[1fr_650px] gap-x-[30px]">
+              <!-- 本文 -->
+              <div>
                 <p class="font-[NotoSansJP] font-semibold text-[28px] leading-relaxed">
                   ネクサスハウジングは、あなたの未来を見据えた住まいを提供します。<br>
                   最新の技術とデザインを駆使し、安心で快適な生活空間を創り出します。<br><br>
@@ -104,7 +103,7 @@
                 </p>
 
                 <!-- ボタン -->
-                <div class="flex flex-wrap justify-start gap-x-[90px] gap-y-[20px] mt-[60px]">
+                <div class="mt-[40px] flex flex-wrap gap-x-[90px] gap-y-[20px]">
                   <a href="#" class="w-[325px] h-[69px] bg-[#FFA800] text-white font-[NotoSansJP] font-semibold text-[36px] rounded-[20px] flex items-center justify-center hover:opacity-90 transition">
                     会社概要
                   </a>
@@ -117,9 +116,9 @@
                 </div>
               </div>
 
-              <!-- 右カラム：画像 -->
-              <div class="flex-1 flex justify-end items-start">
-                <img src="img/newly-built-house.png" alt="住宅外観" class="rounded-md w-full max-w-[650px] object-cover">
+              <!-- 画像 -->
+              <div class="flex justify-end items-start">
+                <img src="img/newly-built-house.png" alt="住宅外観" class="rounded-md w-[650px] h-auto object-cover">
               </div>
             </div>
           </div>
