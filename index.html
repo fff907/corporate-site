@@ -79,49 +79,45 @@
       <div class="container">
         <!-- About -->
         <section id="about" class="my-[50px]">
+          <!-- 画面基準で中央寄せ -->
+          <div class="w-full flex justify-center">
+            <!-- 1440pxコンテナ + 外側左右20pxの白余白 -->
+            <div class="max-w-[1440px] w-full px-[20px]">
+              <!-- 青ボックス：1400px・内側左右70/上下30 -->
+              <div class="box-border mx-auto max-w-[1400px] w-full bg-[#004896] text-white rounded-lg px-[70px] py-[30px]">
 
-          <!-- 画面左右の白余白20px -->
-          <div class="px-[20px]">
-            <!-- 青い背景 -->
-            <div class="mx-auto max-w-[1400px] w-full box-border bg-[#004896] text-white rounded-lg px-[70px] py-[30px]">
-              
-              <!-- 上段：左（ABOUT＋私たちについて） / 右（サブキャッチ） -->
-              <div class="flex items-end justify-between gap-[30px]">
-                <div class="shrink-0">
-                  <h2 class="font-[NotoSansJP] font-medium text-[64px] leading-none">ABOUT</h2>
-                  <p  class="font-[NotoSansJP] font-semibold text-[32px] mt-[8px]">私たちについて</p>
+                <!-- 見出し行：左(ABOUT+私たちについて) / 右(サブキャッチ) -->
+                <div class="flex items-end justify-between gap-[30px]">
+                  <div class="shrink-0">
+                    <h2 class="font-[NotoSansJP] font-medium text-[64px] leading-none">ABOUT</h2>
+                    <p  class="font-[NotoSansJP] font-semibold text-[32px] mt-[8px]">私たちについて</p>
+                  </div>
+                  <h3 class="font-[NotoSansJP] font-semibold text-[56px] leading-none whitespace-nowrap">
+                    つながる未来、 広がる暮らし。
+                  </h3>
                 </div>
-                <h3 class="font-[NotoSansJP] font-semibold text-[56px] leading-none whitespace-nowrap">
-                  つながる未来、 広がる暮らし。
-                </h3>
-              </div>
 
-              <!-- 中段：左（本文） / 右（画像）30px余白 -->
-              <div class="mt-[60px] grid grid-cols-[minmax(0,1fr)_650px] items-start gap-x-[30px]">
-                <p class="font-[NotoSansJP] font-semibold text-[28px] leading-[1.8]">
-                  ネクサスハウジングは、あなたの未来を見据えた住まいを提供します。<br>
-                  最新の技術とデザインを駆使し、安心で快適な生活空間を創り出します。<br><br>
-                  お客様一人ひとりの夢を形にするために、全力でサポートいたします。<br>
-                  あなたの理想の住まい、ネクサスハウジングと共に築きましょう。
-                </p>
-                <img src="img/newly-built-house.png" alt="住宅外観"
-                    class="w-[650px] h-auto rounded-md object-cover">
-              </div>
+                <!-- 本文・画像：30px余白、本文ははみ出し防止 -->
+                <div class="mt-[60px] grid grid-cols-[minmax(0,1fr)_650px] items-start gap-x-[30px]">
+                  <p class="min-w-0 font-[NotoSansJP] font-semibold text-[28px] leading-[1.8]">
+                    ネクサスハウジングは、あなたの未来を見据えた住まいを提供します。<br>
+                    最新の技術とデザインを駆使し、安心で快適な生活空間を創り出します。<br><br>
+                    お客様一人ひとりの夢を形にするために、全力でサポートいたします。<br>
+                    あなたの理想の住まい、ネクサスハウジングと共に築きましょう。
+                  </p>
+                  <img src="img/newly-built-house.png" alt="住宅外観"
+                      class="w-[650px] h-auto rounded-md object-cover">
+                </div>
 
-              <!-- 下段：ボタン（横並び・間隔90px） -->
-              <div class="mt-[60px] flex flex-nowrap items-center gap-x-[90px]">
-                <a href="#"
-                  class="w-[325px] h-[69px] rounded-[20px] bg-[#FFA800] text-white font-[NotoSansJP] font-semibold text-[36px] flex items-center justify-center hover:opacity-90 transition">
-                  会社概要
-                </a>
-                <a href="#"
-                  class="w-[325px] h-[69px] rounded-[20px] bg-[#FFA800] text-white font-[NotoSansJP] font-semibold text-[36px] flex items-center justify-center hover:opacity-90 transition">
-                  企業理念
-                </a>
-                <a href="#"
-                  class="w-[325px] h-[69px] rounded-[20px] bg-[#FFA800] text-white font-[NotoSansJP] font-semibold text-[36px] flex items-center justify-center hover:opacity-90 transition">
-                  代表者挨拶
-                </a>
+                <!-- ボタン：横並び、間隔90px -->
+                <div class="mt-[60px] flex flex-nowrap items-center gap-x-[90px]">
+                  <a href="#"
+                    class="w-[325px] h-[69px] rounded-[20px] bg-[#FFA800] text-white font-[NotoSansJP] font-semibold text-[36px] flex items-center justify-center hover:opacity-90 transition">会社概要</a>
+                  <a href="#"
+                    class="w-[325px] h-[69px] rounded-[20px] bg-[#FFA800] text-white font-[NotoSansJP] font-semibold text-[36px] flex items-center justify-center hover:opacity-90 transition">企業理念</a>
+                  <a href="#"
+                    class="w-[325px] h-[69px] rounded-[20px] bg-[#FFA800] text-white font-[NotoSansJP] font-semibold text-[36px] flex items-center justify-center hover:opacity-90 transition">代表者挨拶</a>
+                </div>
               </div>
             </div>
           </div>
