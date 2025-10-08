@@ -23,26 +23,28 @@
 
   <body>
     <!-- ヘッダー -->
-    <header class="w-full h-[100px] border-t-[10px] border-[#004896] bg-white/75 shadow-md flex justify-between items-center px-10">
-      <!-- ロゴ -->
-      <a href="index.html" class="text-[32px] font-extrabold font-[NotoSansJP] text-gray-900">
-        株式会社ネクサスハウジング
-      </a>
+    <header class="w-full h-[100px] border-t-[10px] border-[#004896] bg-white/75 shadow-md">
+      <div class="max-w-[1440px] mx-auto px-10 h-full flex justify-between items-center">
+        <!-- ロゴ -->
+        <a href="index.html" class="text-[32px] font-extrabold font-[NotoSansJP] text-gray-900">
+          株式会社ネクサスハウジング
+        </a>
 
-      <!-- メニュー -->
-      <nav class="hidden md:flex space-x-10">
-        <a href="#about" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">ABOUT</a>
-        <a href="#service" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">SERVICE</a>
-        <a href="#pickup" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">PICKUP</a>
-        <a href="#news" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">NEWS</a>
-        <a href="#recruit" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">RECRUIT</a>
-      </nav>
+        <!-- メニュー -->
+        <nav class="hidden md:flex space-x-10">
+          <a href="#about" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">ABOUT</a>
+          <a href="#service" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">SERVICE</a>
+          <a href="#pickup" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">PICKUP</a>
+          <a href="#news" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">NEWS</a>
+          <a href="#recruit" class="text-[32px] font-semibold font-[NotoSansJP] text-gray-900">RECRUIT</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-     <!-- カバー -->
+      <!-- カバー -->
       <section class="relative h-[700px] overflow-hidden">
-        <!-- 背景3色ブロック -->
+        <!-- 背景3色ブロック（全幅固定） -->
         <div class="absolute inset-0 z-0 grid grid-cols-[50%_50%]">
           <!-- 左側（上下2分割） -->
           <div class="grid grid-rows-2 h-full">
@@ -53,21 +55,24 @@
           <div class="bg-[#84BFF7] h-full"></div>
         </div>
 
-        <!-- 画像配置 -->
-        <div class="absolute z-10 left-[1158px] top-[-118px] w-[715px] h-[458px]">
-          <img src="./img/house-builder-1.png" alt="設計図" class="w-full h-full object-cover rounded-md">
-        </div>
-        <div class="absolute z-10 left-[280px] top-[80px] w-[725px] h-[470px]">
-          <img src="./img/house-builder-2.png" alt="打ち合わせ中の女性" class="w-full h-full object-cover rounded-md">
-        </div>
-        <div class="absolute z-10 left-[1158px] top-[400px] w-[715px] h-[400px]">
-          <img src="./img/house-builder-3.png" alt="作業する男性" class="w-full h-full object-cover rounded-md">
-        </div>
+        <!-- 1440px基準：中央配置ラッパー -->
+        <div class="relative z-10 max-w-[1440px] mx-auto w-full h-full">
+          <!-- 画像配置 -->
+          <div class="absolute left-[1000px] top-[-118px] w-[715px] h-[458px]">
+            <img src="./img/house-builder-1.png" alt="設計図" class="w-full h-full object-cover rounded-md">
+          </div>
+          <div class="absolute left-[240px] top-[80px] w-[725px] h-[470px]">
+            <img src="./img/house-builder-2.png" alt="打ち合わせ中の女性" class="w-full h-full object-cover rounded-md">
+          </div>
+          <div class="absolute left-[1000px] top-[400px] w-[715px] h-[400px]">
+            <img src="./img/house-builder-3.png" alt="作業する男性" class="w-full h-full object-cover rounded-md">
+          </div>
 
-        <!-- キャッチコピー -->
-        <h1 class="absolute z-10 left-[0px] bottom-[0px] text-[64px] font-extrabold font-[NotoSansJP] text-gray-900">
-          未来をつなぐ、安心の住まい。
-        </h1>
+          <!-- キャッチコピー -->
+          <h1 class="absolute left-0 bottom-0 text-[64px] font-extrabold font-[NotoSansJP] text-gray-900">
+            未来をつなぐ、安心の住まい。
+          </h1>
+        </div>
       </section>
 
       <div class="container">
@@ -99,7 +104,7 @@
 
                 <!-- 画像 -->
                 <div class="flex-1">
-                  <img src="img/about-house.jpg" alt="住宅外観" class="rounded-md w-full max-w-md mx-auto md:mx-0" />
+                  <img src="img/newly-built-house.png" alt="住宅外観" class="rounded-md w-full max-w-md mx-auto md:mx-0" />
                 </div>
 
               </div>
