@@ -92,6 +92,7 @@
                 <div class="flex items-end justify-between gap-[30px]">
                   <div class="shrink-0">
                     <h2 class="font-[NotoSansJP] font-medium text-[64px] leading-none">ABOUT</h2>
+                    <!-- leading-none → 行間を0に近づける（文字が詰まって見える） -->
                     <p  class="font-[NotoSansJP] font-semibold text-[32px] mt-[8px]">私たちについて</p>
                   </div>
                   <h3 class="font-[NotoSansJP] font-semibold text-[56px] leading-none whitespace-nowrap">
@@ -113,6 +114,7 @@
 
                 <!-- ボタン：横並び、間隔90px -->
                 <div class="mt-[60px] flex flex-nowrap items-center gap-x-[90px]">
+                  <!-- flex-nowrap → 子要素の折り返しを禁止（1行で横並びを強制） -->
                   <a href="#"
                     class="w-[325px] h-[69px] rounded-[20px] bg-[#FFA800] text-white font-[NotoSansJP] font-semibold text-[36px] flex items-center justify-center hover:opacity-90 transition">会社概要</a>
                   <a href="#"
@@ -241,6 +243,7 @@
               <h3 class="text-[32px] font-bold font-[NotoSansJP] text-center mb-[20px]">1.地域資源の活用</h3>
               <img src="./img/architectural-design.png" alt="建築設計" class="mb-[20px] w-full h-auto">
               <p class="text-[24px] font-medium font-[NotoSansJP] leading-snug">
+                <!-- leading-snug → やや詰まった行間 -->
                 地域の特色や資源を活かした住宅供給を推進し、地元経済を活性化します。
               </p>
             </div>
