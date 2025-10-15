@@ -298,9 +298,9 @@
               <!-- 背景ブロック -->
               <div class="mx-auto max-w-[1434px] w-full bg-[#D5FFD2] mt-[50px] mb-[100px]">
                 <!-- 左右のレイアウト基準 -->
-                <div class="px-[90px]">
+                <div class="relative px-[90px]">
                   <!-- 見出し -->
-                  <div class="text-[#004896] pt-[40px]">
+                  <div class="text-[#004896] absolute left-0 top-[40px]">
                     <div class="inline-block">
                       <h2 class="font-[NotoSansJP] font-medium text-[64px] leading-none">NEWS</h2>
                       <p class="font-[NotoSansJP] font-semibold text-[32px] mt-[8px] text-center">最新情報</p>
@@ -308,15 +308,15 @@
                   </div>
 
                   <!-- 左：すべて見る円 / 右：ニュース一覧 -->
-                  <div class="grid grid-cols-[173px_1fr] gap-x-[100px]">
+                  <div class="grid grid-cols-[173px_1fr] gap-x-[100px] pt-[60px]">
                     <!-- すべて見る -->
                     <div class="mt-[180px]">
-                      <div class="relative w-[173px] h-[173px] rounded-full border-[6px] border-[#004896]">
+                      <div class="relative w-[173px] h-[173px] rounded-full border-[3px] border-[#004896]">
                         <div class="absolute inset-0 px-[18px] pt-[18px] text-[#004896]">
                           <p class="font-[Inter] text-[40px] leading-[1.15] text-left">
                             すべて<br>見る
                           </p>
-                          <div class="w-full text-center leading-none">
+                          <div class="w-full text-center leading-none mt-[20px]">
                             <span class="inline-block text-[64px]">→</span>
                           </div>
                         </div>
@@ -324,29 +324,29 @@
                     </div>
 
                     <!-- ニュース一覧 -->
-                    <div class="pt-[60px]">
+                    <div class="pb-[60px]">
                       <ul class="w-full">
                         <li class="flex items-start gap-[50px] py-[22px] border-b border-[#8D8D8D]">
                           <span class="w-[180px] shrink-0 font-[NotoSansJP] font-semibold text-[30px] text-[#8D8D8D] leading-none">2024.10.01</span>
-                          <p class="flex-1 font-[NotoSansJP] font-semibold text-[30px] text-[#333] leading-tight">
+                          <p class="flex-1 font-[NotoSansJP] font-semibold text-[30px] text-[#333] leading-[1.4] h-[84px] overflow-hidden">
                             新エコフレンドリー住宅プロジェクトの詳細を発表。
                           </p>
                         </li>
                         <li class="flex items-start gap-[50px] py-[22px] border-b border-[#8D8D8D]">
                           <span class="w-[180px] shrink-0 font-[NotoSansJP] font-semibold text-[30px] text-[#8D8D8D] leading-none">2024.09.01</span>
-                          <p class="flex-1 font-[NotoSansJP] font-semibold text-[30px] text-[#333] leading-tight">
+                          <p class="flex-1 font-[NotoSansJP] font-semibold text-[30px] text-[#333] leading-[1.4] h-[84px] overflow-hidden">
                             地域コミュニティ活性化イベントを開催しました。
                           </p>
                         </li>
                         <li class="flex items-start gap-[50px] py-[22px] border-b border-[#8D8D8D]">
                           <span class="w-[180px] shrink-0 font-[NotoSansJP] font-semibold text-[30px] text-[#8D8D8D] leading-none">2024.08.01</span>
-                          <p class="flex-1 font-[NotoSansJP] font-semibold text-[30px] text-[#333] leading-tight">
+                          <p class="flex-1 font-[NotoSansJP] font-semibold text-[30px] text-[#333] leading-[1.4] h-[84px] overflow-hidden">
                             若年層向け新住宅ローンプランの提供を開始します！
                           </p>
                         </li>
                         <li class="flex items-start gap-[50px] py-[22px]">
                           <span class="w-[180px] shrink-0 font-[NotoSansJP] font-semibold text-[30px] text-[#8D8D8D] leading-none">2024.07.01</span>
-                          <p class="flex-1 font-[NotoSansJP] font-semibold text-[30px] text-[#333] leading-tight">
+                          <p class="flex-1 font-[NotoSansJP] font-semibold text-[30px] text-[#333] leading-[1.4] h-[84px] overflow-hidden">
                             最新スマートホーム技術を「ネクサス スマートライフ」の導入を開始します。
                           </p>
                         </li>
