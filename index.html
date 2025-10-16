@@ -438,14 +438,13 @@
         <div class="flex h-full flex-col">
 
           <!-- 上段：社名 + メニュー -->
-          <div class="pt-[40px] px-[90px] flex items-center">
+          <div class="pt-[40px] px-[90px] flex items-center w-full">
             <h2 class="text-[30px] font-extrabold leading-none"
                 style="font-family:'Noto Sans JP',sans-serif;">
               株式会社ネクサスハウジング
             </h2>
-            <nav aria-label="フッターメニュー" class="ml-[100px]">
-              <ul class="flex gap-[40px] text-[32px] font-semibold"
-                  style="font-family:'Noto Sans JP',sans-serif;">
+            <nav aria-label="フッターメニュー" class="ml-[100px] flex-1">
+              <ul class="flex justify-end gap-[40px] text-[32px] font-semibold" style="font-family:'Noto Sans JP',sans-serif;">
                 <li><a href="#about"   class="hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-white/50">ABOUT</a></li>
                 <li><a href="#service" class="hover:opacity-85 focus:ring-2 focus:ring-white/50">SERVICE</a></li>
                 <li><a href="#pickup"  class="hover:opacity-85 focus:ring-2 focus:ring-white/50">PICKUP</a></li>
@@ -466,12 +465,26 @@
 
             <!-- ボタン群 -->
             <div class="flex justify-end items-center gap-[50px]">
-            <img src="./img/gmail_icon.png" href="mailto:info@example.com" aria-label="メールで問い合わせ"
-            class="w-[90px] h-[90px] rounded-full bg-[#FFA800] grid place-items-center hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-white/60" >
-            <img src="./img/X_icon.png" href="https://x.com" aria-label="Xで問い合わせ"
-            class="w-[90px] h-[90px] rounded-full bg-[#FFA800] grid place-items-center hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-white/60">
-            <img src="./img/note_icon.png" href="https://note.com" aria-label="noteで問い合わせ"
-            class="w-[90px] h-[90px] rounded-full bg-[#FFA800] grid place-items-center hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-white/60">
+              <a href="mailto:info@example.com"
+                class="w-[90px] h-[90px] rounded-full bg-[#FFA800] grid place-items-center hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-white/60"
+                aria-label="メールで問い合わせ">
+                <img src="./img/gmail_icon.png" alt="メール"
+                    class="w-[64px] h-[64px] object-contain" />
+              </a>
+
+              <a href="https://x.com" target="_blank" rel="noopener"
+                class="w-[90px] h-[90px] rounded-full bg-[#FFA800] grid place-items-center hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-white/60"
+                aria-label="Xで問い合わせ">
+                <img src="./img/X_icon.png" alt="X"
+                    class="w-[64px] h-[64px] object-contain" />
+              </a>
+
+              <a href="https://note.com" target="_blank" rel="noopener"
+                class="w-[90px] h-[90px] rounded-full bg-[#FFA800] grid place-items-center hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-white/60"
+                aria-label="noteで問い合わせ">
+                <img src="./img/note_icon.png" alt="note"
+                    class="w-[64px] h-[64px] object-contain" />
+              </a>
             </div>
           </div>
 
