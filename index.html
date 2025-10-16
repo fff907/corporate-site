@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+    <!-- Font Awesone -->
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-jLKHWMZ7C3Y3q8bZpQ8r6w8Z2p1VQF1K8z8Kp3p7qfJf5iNnV9lZ2Yb8GaxOm9gI"
+          crossorigin="anonymous">
     <!-- リセットCSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
     <!-- Tailwind CSS -->
@@ -433,13 +438,68 @@
     </main>
 
     <!-- フッター -->
-    <footer class="footer">
-      <div class="contact__content">
-        <p class="contact__description"></p>
-        <ul class="contact__buttons"></ul>              
-      </div>
-      <div class="footer__copyright">
-        <small>©2025 nexus housing All Rights Reserved.</small>
+    <footer class="mt-[100px] bg-[#004896] text-white w-full">
+      <div class="mx-auto max-w-[1440px] h-[400px]">
+        <div class="flex h-full flex-col">
+
+          <!-- 上段：社名 + メニュー -->
+          <div class="pt-[40px] px-[90px] flex items-center">
+            <h2 class="text-[32px] font-extrabold leading-none"
+                style="font-family:'Noto Sans JP',sans-serif;">
+              株式会社ネクサスハウジング
+            </h2>
+            <nav aria-label="フッターメニュー" class="ml-[100px]">
+              <ul class="flex gap-[40px] text-[32px] font-semibold"
+                  style="font-family:'Noto Sans JP',sans-serif;">
+                <li><a href="#about"   class="hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-white/50">ABOUT</a></li>
+                <li><a href="#service" class="hover:opacity-85 focus:ring-2 focus:ring-white/50">SERVICE</a></li>
+                <li><a href="#pickup"  class="hover:opacity-85 focus:ring-2 focus:ring-white/50">PICKUP</a></li>
+                <li><a href="#news"    class="hover:opacity-85 focus:ring-2 focus:ring-white/50">NEWS</a></li>
+                <li><a href="#recruit" class="hover:opacity-85 focus:ring-2 focus:ring-white/50">RECRUIT</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- 中段：住所＋ボタン群 -->
+          <div class="mt-[60px] px-[90px] grid grid-cols-[auto_370px] gap-x-[380px] items-center">
+            <!-- 住所 -->
+            <address class="not-italic text-[28px] leading-relaxed"
+                    style="font-family:'Noto Sans JP',sans-serif;">
+              XX県XX市XX区XX1丁目1-1<br>
+              TEL 000-000-0000 ／ FAX 000-000-0000
+            </address>
+
+            <!-- ボタン群 -->
+            <div class="flex justify-end items-center gap-[50px]">
+              <a href="mailto:info@example.com"
+                class="w-[90px] h-[90px] rounded-full bg-[#FFA800] grid place-items-center hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-white/60"
+                aria-label="メールで問い合わせ">
+                <i class="far fa-envelope text-[64px] leading-none"></i>
+              </a>
+
+              <a href="#" target="_blank" rel="noopener"
+                class="w-[90px] h-[90px] rounded-full bg-[#FFA800] grid place-items-center hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-white/60"
+                aria-label="X（Twitter）">
+                <i class="fab fa-x-twitter text-[64px] leading-none"></i>
+              </a>
+
+              <a href="#" target="_blank" rel="noopener"
+                class="w-[90px] h-[90px] rounded-full bg-[#FFA800] grid place-items-center hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-white/60"
+                aria-label="note">
+                <span class="text-[64px] font-black leading-none">n</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 下部：コピーライト -->
+          <div class="mt-[90px] bg-[#D5FFD2] h-[50px] flex items-center justify-center px-[90px]">
+            <p class="text-[20px] text-center w-full"
+              style="font-family:'Noto Sans JP',sans-serif;">
+              ©2025 NEXUS HOUSING All Rights Reserved.
+            </p>
+          </div>
+          <div class="pb-[35px]"></div>
+        </div>
       </div>
     </footer>
   </body>
